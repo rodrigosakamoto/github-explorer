@@ -7,7 +7,7 @@ interface FormProps {
 
 export const Title = styled.h1`
   font-size: 48px;
-  color: #3a3a3a;
+  color: ${(props) => props.theme.colors.text};
   max-width: 450px;
   line-height: 56px;
 
@@ -22,12 +22,13 @@ export const Form = styled.form<FormProps>`
 
   input {
     flex: 1;
+    background: ${(props) => props.theme.colors.primary};
     height: 70px;
     padding: 0 24px;
     border: 0;
     border-radius: 5px 0 0 5px;
-    color: #3a3a3a;
-    border: 2px solid #fff;
+    color: ${(props) => props.theme.colors.text};
+    border: 2px solid ${(props) => props.theme.colors.primary};
     ${(props) =>
       props.hasError &&
       css`
@@ -67,7 +68,7 @@ export const Repositories = styled.div`
   max-width: 700px;
 
   a {
-    background: #fff;
+    background: ${(props) => props.theme.colors.primary};
     border-radius: 5px;
     width: 100%;
     padding: 24px;
@@ -98,7 +99,7 @@ export const Repositories = styled.div`
 
       strong {
         font-size: 20px;
-        color: #3d3d4d;
+        color: ${(props) => props.theme.colors.text};
       }
 
       p {
