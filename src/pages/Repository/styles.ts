@@ -29,6 +29,11 @@ export const RepositoryInfo = styled.section`
     display: flex;
     align-items: center;
 
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+
     img {
       width: 120px;
       height: 120px;
@@ -38,9 +43,20 @@ export const RepositoryInfo = styled.section`
     div {
       margin-left: 24px;
 
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+      }
+
       strong {
         font-size: 36px;
         color: ${(props) => props.theme.colors.text};
+
+        @media (max-width: 768px) {
+          font-size: 25px;
+        }
       }
 
       p {
@@ -64,6 +80,10 @@ export const RepositoryInfo = styled.section`
         display: block;
         font-size: 36px;
         color: ${(props) => props.theme.colors.text};
+
+        @media (max-width: 768px) {
+          font-size: 25px;
+        }
       }
 
       span {

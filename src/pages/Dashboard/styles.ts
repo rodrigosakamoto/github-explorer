@@ -87,6 +87,11 @@ export const Repositories = styled.div`
       margin-top: 16px;
     }
 
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+
     img {
       width: 64px;
       height: 64px;
@@ -107,11 +112,21 @@ export const Repositories = styled.div`
         color: #a8a8b3;
         margin-top: 4px;
       }
+
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     svg {
       margin-left: auto;
       color: #cbcbd6;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
 `;

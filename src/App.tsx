@@ -3,10 +3,10 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 import usePersistedState from './utils/usePersistedState';
 
+import ThemeSwitcher from './Components/ThemeSwitcher';
+
 import light from './styles/themes/light';
 import dark from './styles/themes/dark';
-
-import ThemeSwitcher from './Components/ThemeSwitcher';
 
 import GlobalStyle from './styles/global';
 import Routes from './routes';
